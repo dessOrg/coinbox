@@ -1,0 +1,47 @@
+{
+  "name": "coinbox",
+  "version": "1.0.0",
+  "description": "Coinbox is a platform where prospective investors get investment opportunities",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "start": "npm install && rm -rf .tmp/ && nodemon -e css,html,js app.js -L",
+    "predev": "./bin/grunt",
+    "dev": "npm install && rm -rf .tmp/ & ./bin/nodedev app "
+  },
+  "dependencies" : {
+    "express" : "~4.0.0",
+    "ejs": "*",
+    "ejs-locals": "^1.0.2",
+    "passport" : "~0.1.17",
+    "passport-local" : "~0.1.6",
+    "connect-flash" : "~0.1.1",
+    "dotenv": "^2.0.0",
+    "bcrypt-nodejs" : "latest",
+    "bcrypt": "^0.8.7",
+    "bcryptjs": "*",
+    "base64url": "^2.0.0",
+    "multer": "^1.1.0",
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "method-override": "~1.0.0",
+    "express-validator": "*",
+    "express-session": "~1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dessOrg/coinbox.git"
+  },
+  "keywords": [
+    "coinbox",
+    "pension",
+    "scheme"
+  ],
+  "author": "Desmond Korir <desshub95@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dessOrg/coinbox/issues"
+  },
+  "homepage": "https://github.com/dessOrg/coinbox#readme"
+}
