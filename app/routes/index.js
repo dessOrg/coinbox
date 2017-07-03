@@ -14,6 +14,7 @@ module.exports = (app)=> {
      Home Routes
   =====================================================*/
 app.get('/', homeRoutes.index);
+app.get('/about', homeRoutes.about);
 
 /*=====================================================
      Admin Routes

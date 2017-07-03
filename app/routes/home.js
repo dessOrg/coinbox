@@ -11,6 +11,12 @@ module.exports = {
         res.render('home/index.ejs');
    },
 
+   // =====================================
+   about: (req, res)=> {
+
+       res.render('home/about.ejs');
+  },
+
 
 };
 
